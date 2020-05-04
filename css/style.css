@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.site-logo {
+    /*display: inline-block;*/
+    font-size: 30px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+}
+
+.site-logo::first-letter {
+    font-size: 30px;
+    font-family: "Roboto";
+    color: rgb(26, 188, 156);
+}
+
+.site-navigation {
+    float: right;
+    margin-top: 13px;
+    padding-bottom: 54px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+}
+.site-navigation li {
+    float: left;
+    font-size: 14px;
+    color: rgb(81, 81, 81);
+    font-family: "OpenSans";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.786;
+}
+.site-navigation li:not(:last-child) {
+    margin-right: 22px;
+}
+
+.site-navigation a:hover, 
+.site-navigation a:focus {
+    color: rgb(26, 188, 156);
+}
+
+.nav {
+    padding-top: 36px;
+}
+
+/*FEATURED PRODUCTS SECTION*/
+
+.featured-products h2 {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 0.667;
+    padding-top: 102px;
+    text-align: center;
+    padding-bottom: 122px;
+}
+
+h2::after {
+    content:'';
+    height: 7px;
+    background-color: rgb(26, 188, 156);
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 164px;
+}
+
+/*SECTION PRODUCTS*/
+
+.product-list-item {
+    background-color:#e9f0fd;
+    width: 255px;
+    float: left;
+}
+
+.product-list-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.product-list-item:not(:nth-last-child(-n+4)) {
+    margin-bottom: 30px;
+}
+
+.products-name h4 {
+    background-color: rgb(50, 50, 50);
+    height: 32px;
+}
+
+.name, .price {
+    font-size: 18px;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    line-height: 1.778;
+}
+
+.name {
+    float: left;
+    color: rgb(255, 255, 255);
+}
+
+.price {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.4);
+    float: right;
+}
+
+.products-name h4:focus,
+.products-name h4:hover {
+background-color: #1abc9c;
+}
+
+.products {
+    padding-bottom: 96px;
+}
+
+/*LATEST NEWS*/
+
+.news h2 {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 0.667;
+    padding-top: 96px;
+    text-align: center;
+    padding-bottom: 122px;
+}
+
+h2::after {
+    content:'';
+    height: 7px;
+    background-color: rgb(26, 188, 156);
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 164px;
+}
