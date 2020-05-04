@@ -18,7 +18,7 @@ ul, ol {
     list-style: none;
 }
 
-clearfix::after {
+.clearfix::after {
     display: table;
     content: '';
     clear: both;
@@ -173,3 +173,62 @@ h2::after {
     margin-top: 24px;
     width: 164px;
 }
+
+/*SECTION LATEST NEWS*/
+
+.last-news-list-items img {
+    margin-bottom: 14px;
+}
+
+.last-news {
+    font-size: 18px;
+    font-family: "OpenSans";
+    color: rgb(85, 82, 82);
+    font-weight: bold;
+    line-height: 1.444;
+}
+
+.last-news::after {
+    content:'';
+    height: 3px;
+    background-color: rgb(26, 188, 156);
+    display: block;
+    margin-top: 15px;
+    width: 136px;
+    margin-bottom: 26px;
+}
+
+.last-news-article {
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: rgb(85, 82, 82);
+    line-height: 1.857;
+}
+
+.last-news-list-items {
+    float: left;
+    width: 350px;
+}
+
+.last-news-list-items:not(:last-child) {
+    margin-right: 30px;
+}
+
+.last-news-article {
+    margin-bottom: 12px;
+}
+  
+.button {
+    display: block;
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 1.625;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgb(78, 198, 171);
+    width: 159px;
+    height: 51px;
+    padding-top: 12px;
+}
+
